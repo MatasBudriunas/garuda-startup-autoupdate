@@ -64,6 +64,9 @@ testAutostart() {
 echo "Installing necessary packages..."
 installIfMissing pacman
 installIfMissing zenity
+installIfMissing winetricks
+installIfMissing gamemode
+installIfMissing mangohud
 
 echo "Setting up the update script..."
 makeScriptExecutable
