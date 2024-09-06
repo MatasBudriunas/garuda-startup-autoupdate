@@ -10,7 +10,9 @@ showUpdatePrompt() {
 
 runUpdateIfAgreed() {
   if [ $? -eq 0 ]; then
-    konsole -e "garuda-update && winetricks --self-update && yay -Syu lutris dxvk-bin proton-ge-custom-bin --noconfirm && sudo pacman -Syu gamemode mangohud --noconfirm"
+    konsole --hold -e bash -c "garuda-update;
+                               winetricks --self-update;
+                               yay -Syu lutris dxvk-bin --noconfirm;"
   fi
 }
 
