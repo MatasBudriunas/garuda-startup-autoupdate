@@ -12,7 +12,7 @@ runUpdateIfAgreed() {
   if [ $? -eq 0 ]; then
     konsole --hold -e bash -c "garuda-update;
                                winetricks --self-update;
-                               yay -Syu lutris dxvk-bin --noconfirm;"
+                               yay -Syu lutris --noconfirm;"
   fi
 }
 
