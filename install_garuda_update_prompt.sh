@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 
 echo "Starting installation script..."
 
@@ -64,8 +64,8 @@ testAutostart() {
 echo "Installing necessary packages..."
 installIfMissing pacman
 installIfMissing zenity
-installIfMissing winetricks
-installIfMissing gamemode
+# installIfMissing winetricks
+# installIfMissing gamemode
 installIfMissing mangohud
 
 echo "Setting up the update script..."
